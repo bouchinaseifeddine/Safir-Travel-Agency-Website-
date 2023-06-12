@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-Color : #54989B;
+    --second-Color: #406B75;
+    --white-Color: #eee;
+    --dark-Color:#171d1d;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+header:after {
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 8%) 0 1px 1px;
+}
+
+header .container{
+    height: fit-content;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .container .logo {
+    width: 200px;
+}
+
+header .container .logo  img {
+    width: 60%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+header  .container nav {
+    width: 700px;
+    margin-left: -50px;
+}
+
+header  .container nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav ul li{
+    position: relative;
+}
+header .container nav ul li a{
+    color : var(--dark-Color);
+    border: none;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 0.1s;
+}
+
+header .container nav ul li a.active {
+    color: var(--main-Color);
+}
+
+header .container nav ul li a:hover{
+    color: var(--main-Color);
+    
+}
+
+
+header .container  ul li {
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--white-Color);
+    list-style: none;
+    cursor:pointer;
+
+}
+
+header  .container div:last-child {
+    width: fit-content;
+    
+}
+
+header  .container div:last-child ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header  .container div:last-child ul li a{
+    padding: 7px;
+    font-size: 15px;
+    width: fit-content;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: ease-in;
+    color: var(--main-Color);
+    text-decoration: none;
+    border: 2px solid var(--main-Color);
+    transition-duration: .1s;
+}
+header .container div:last-child ul li:first-child a:hover{
+    box-shadow: inset 0 0 0 1px var(--main-Color);
+    
+}
+header  .container div:last-child ul li:last-child a{
+    background-color: var(--main-Color);
+        color: var(--white-Color);
+
+}
+header  .container div:last-child ul li:last-child a:hover{
+    background-color: #3A6365;
+    border-color: #3A6365;
+
+}
+
+/* Header */
+/* main */
+
+
+main {
+    width: 100%;
+    height: 750px;
+}
+
+main .container {
+    position: absolute;
+    margin: 100px auto;
+    width: calc(100% - 40px);
+    height: fit-content;
+}
+
+main .container .hotel-reservation {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    height: 550px;
+    width: 430px;
+    padding: 10px;
+    margin-left: 80px;
+    color: var(--dark-Color);
+    border-radius: 15px;
+    box-shadow: 2px 0 10px 1px #908c8c ;
+    position: relative;
+}
+
+main .container .hotel-reservation h2 {
+    padding: 15px;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+main .container .hotel-reservation p {
+    padding: 15px;
+    color: grey;
+    margin-top: -30px;
+}
+
+main .container .hotel-reservation form {
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .2s;
+}
+
+main .container .hotel-reservation form input {
+    margin-bottom: 7px;
+    width: calc(100% - 30px);
+    align-self: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+    color: grey;
+    padding: 10px;
+
+}
+
+main .container .hotel-reservation form input:focus {
+    outline: none;
+}
+
+main .container .hotel-reservation form button {
+    padding: 10px;
+    width: calc(100% - 30px);
+    align-self: center;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg , var(--second-Color)80% , var(--main-Color));
+    border: none;
+    color: var(--white-Color);
+    transition-duration: .2s;
+}
+main .container .hotel-reservation form button:hover{
+    color: var(--second-Color);
+    background-color: var(--white-Color);
+    background-image: none;
+    transform: scale(1.01);
+    border: 1px solid var(--second-Color);
+    
+}
+
+
+main .container .hotel-reservation:after {
+    content: "";
+    position: absolute;
+    background-image: url("/images/hotel-landing.png");
+    background-size: cover;
+    background-repeat:round;
+    right: -600px;
+    top: -40px;
+    width: 190%;
+    height: calc(100% + 80px);
+    z-index: -999;
+    border-radius: 15px;
+}
+
+/* main */
+
+/* section */
+
+section {
+    margin-top: 70px;
+    height: fit-content;
+    place-content: center;
+}
+section .container {
+    margin:auto 80px;
+
+}
+
+section .container > div {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container > div div {
+    width: 300px;
+    /* background-color: #3A6365; */
+    height: 300px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0px 12px 24px 0px #0c1617; */
+    box-shadow: 0 12px 24px 0px rgba(15, 77, 57, 0.12);
+    transition-duration: .2s;
+    position: relative;
+}
+
+
+section .container > div div img {
+    width: 100%;
+    height: 170px;
+    align-self: flex-start;
+    justify-self: flex-start;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+section .container > div div:hover{
+    box-shadow: 0px 20px 24px 0px rgba(15, 25, 18, 0.12);
+    cursor:pointer;
+    transform: translateY(-2px);
+}
+
+section .container > div div:hover img{
+    transform: scale(1.05) rotate(0.3deg);
+    filter: blur(1px);
+}
+
+section .container > div div h2 {
+    font-size: 17px;
+    padding: 0 10px;
+    color: var(--dark-Color);
+}
+
+
+section .container  > div div button {
+    display: none;
+    position: absolute;
+    /* color: var(--white-Color); */
+    /* background-color: var(--white-Color); */
+    background-color: transparent;
+    color: var(--white-Color);
+    font-size: 15px;
+    font-weight: 900;
+    border: 3px solid var(--white-Color);
+    padding: 10px;
+    top: 20%;
+    left: 35%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section .container  > div div:hover button{
+    display: flex;
+    z-index: 999;
+}
+
+section .container  > div div p {
+    margin-top: 5px;
+    padding: 0 10px;
+    font-size: 11px;
+    color: var(--second-Color);
+}
+
+section .container > h2 {
+    margin-bottom: 25px;
+    color: var(--dark-Color);
+    opacity: 0.9;
+}
+/* section */
+
+
+
+/* Footer  */
+footer {
+    margin-top: 60px;
+    background-color: var(--second-Color);
+}
+
+footer .container {
+    padding: 10px;
+    width: calc(100% - 40px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .copyright {
+    color: var(--white-Color);
+    font-size: 15px;
+}
+
+footer .container .copyright a {
+    text-decoration: none;
+    color: var(--white-Color);
+}
+
+footer .container .copyright a:hover{
+    text-decoration: underline;
+}
+
+footer .container ul {
+    display: flex;
+}
+
+footer .container ul li {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+footer .container ul li a {
+    text-decoration: none;
+    color: var(--white-Color);
+}
+
+footer .container ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Footer  */
+
+
+
+.go-top {
+    background-color: var(--second-Color);
+    height: 25px;
+    padding: 10px;
+    width: 30px;
+    position: fixed;
+    right: -40px;
+    bottom: 50px;
+    color: var(--white-Color);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.go-top.show {
+    right: 20px;
+}
+
+

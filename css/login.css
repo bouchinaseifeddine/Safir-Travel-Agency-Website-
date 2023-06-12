@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-Color : #54989B;
+    --second-Color: #406B75;
+    --white-Color: #eee;
+    --dark-Color:#171d1d;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+header:after {
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 8%) 0 1px 1px;
+
+
+}
+
+header .container{
+    height: fit-content;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .container .logo {
+    width: 200px;
+}
+
+header .container .logo  img {
+    width: 60%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+header  .container nav {
+    width: 700px;
+    margin-left: -50px;
+}
+
+header  .container nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav ul li{
+    position: relative;
+}
+header .container nav ul li a{
+    color : var(--dark-Color);
+    border: none;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 0.1s;
+}
+
+header .container nav ul li a:hover{
+    color: var(--main-Color);
+    
+}
+
+
+header .container  ul li {
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--white-Color);
+    list-style: none;
+    cursor:pointer;
+
+}
+
+header  .container div:last-child {
+    width: fit-content;
+    
+}
+
+header  .container div:last-child ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+header  .container div:last-child ul li a{
+    padding: 7px;
+    font-size: 15px;
+    width: fit-content;
+    font-weight: 500;
+    border-radius: 20px;
+    transition: ease-in;
+    color: var(--main-Color);
+    text-decoration: none;
+    border: 2px solid var(--main-Color);
+    transition-duration: .1s;
+}
+header .container div:last-child ul li:first-child a:hover{
+    box-shadow: inset 0 0 0 1px var(--main-Color);
+    
+}
+header  .container div:last-child ul li:last-child a{
+    background-color: var(--main-Color);
+        color: var(--white-Color);
+
+}
+header  .container div:last-child ul li:last-child a:hover{
+    background-color: #3A6365;
+    border-color: #3A6365;
+
+}
+
+/* Header */
+
+
+/* main */
+main {
+    height: 89vh;
+    background-color: #d5ddd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .container {
+    height: 90%;
+    display: flex;
+    background-color: var(--white-Color);
+    border-radius: 7px;
+    position: relative;
+    width: 50%;
+    box-shadow: 5px 12px 20px 0px rgba(15, 20, 57, 0.12);
+}
+
+main .container div {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container div h2 {
+    color: var(--second-Color);
+    font-size: 40px;
+}
+
+main .container div h6 {
+    color: var(--dark-Color);
+    font-size: 13px;
+}
+
+main .container div h6 span {
+    color: var(--main-Color);
+    cursor: pointer;
+}
+
+main .container div h6 span:hover {
+    text-decoration: underline;
+}
+
+main .container div form {
+    margin-top: 20px;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .container div form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+main .container div form input:focus {
+    border: 1px solid var(--main-Color);
+    outline: none;
+}
+
+main .container div form button {
+    width: 100%;
+    padding: 15px;
+    color: var(--white-Color);
+    background-color: var(--second-Color);
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+main .container div form button:hover {
+    background-color:#3A6365;
+
+}
+main .container div p {
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main .container div p:hover {
+    text-decoration: underline;
+}
+
+main .container img {
+    width: 50%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* main */
