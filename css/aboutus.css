@@ -183,7 +183,7 @@ main .container figure::before{
     right: 15px;
     color: #171d1d;
     z-index: 999;
-    background-image: url('D:/SafirAgency/images/aboutus-2.jpg');
+    background-image: url('../images/aboutus-2.jpg');
     background-size: cover;
     border: 10px solid white;
     border-radius: 120px;
