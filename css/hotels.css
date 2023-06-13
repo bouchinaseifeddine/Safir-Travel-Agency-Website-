@@ -228,9 +228,9 @@ main .container .hotel-reservation form button:hover{
 main .container .hotel-reservation:after {
     content: "";
     position: absolute;
-    background-image: url("/images/hotel-landing.png");
+    background-image: url("D:/SafirAgency/images/hotel-landing.png");
     background-size: cover;
-    background-repeat:round;
+    background-repeat: round;
     right: -600px;
     top: -40px;
     width: 190%;
